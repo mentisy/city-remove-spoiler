@@ -17,3 +17,9 @@ const matchHeadings = document.querySelectorAll('.article-preview__heading, .art
 matchHeadings.forEach(matchHeading => {
     matchHeading.innerText = removeSpoiler(matchHeading.innerText);
 })
+
+// Remove the match description
+const descriptions = document.querySelectorAll('.article-body__subtitle, .article-body__article-text');
+descriptions.forEach(description => {
+    description.innerText = 'Description removed by the browser extension `Manchester City+ Spoiler Free`.'
+});
