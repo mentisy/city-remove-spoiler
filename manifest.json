@@ -1,0 +1,12 @@
+{
+    "manifest_version": 2,
+    "name": "Manchester City+ Spoiler Free",
+    "version": "1.0.0",
+    "description": "Removes the score from Manchester City+ full match replays",
+    "content_scripts": [
+        {
+            "matches": ["*://*.mancity.com/citytv/*"],
+            "js": ["city-remove-spoiler.js"]
+        }
+    ]
+}
