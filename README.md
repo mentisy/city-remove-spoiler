@@ -1,4 +1,4 @@
-#City Remove Spoiler
+# City Remove Spoiler
 
 A Firefox extension that replaces all result spoilers from the replay section, to prevent you from knowing the result
 before watching the match.
