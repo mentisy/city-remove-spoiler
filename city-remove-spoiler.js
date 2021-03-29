@@ -18,6 +18,13 @@ matchHeadings.forEach(matchHeading => {
     matchHeading.innerText = removeSpoiler(matchHeading.innerText);
 })
 
+// Remove the video poster as City display the results in it
+document.querySelector('video').addEventListener('loadedmetadata', () => {
+    const videoContainer = document.querySelector('.video-page__video');
+    videoContainer.querySelector('style').remove();
+    videoContainer.querySelector('.vjs-poster').style.backgroundImage = 'none';
+})
+
 // Remove the match description
 const descriptions = document.querySelectorAll('.article-body__subtitle, .article-body__article-text');
 descriptions.forEach(description => {
